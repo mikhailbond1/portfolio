@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikhail's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Adjusted the CSS link -->
+    <link rel="stylesheet" href="{{ url_for('main.static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <header>
+        <div class="about-section">
+            <!-- Adjusted the image source -->
+            <img src="{{ url_for('main.static', filename='images/mikhail.png') }}" alt="Mikhail">
+            <h1>About Mikhail</h1>
+            <p>Junior @ NYU pursuing a CS major 🧑🏻‍💻. Interested in startups and entrepreneurship.</p>
+            <p>I spend my free time running, hiking, and exploring NYC 🗽.</p>
+            <a href="https://www.linkedin.com/in/mikhail-bond-471b181a9/">LinkedIn</a> |
+            <a href="https://github.com/mikhailbond1">GitHub</a>
+        </div>
+    </header>
+    <section id="work-projects">
+        <h2>Work Projects</h2>
+        <div class="project">
+            <!-- Adjusted the image source -->
+            <img src="{{ url_for('main.static', filename='images/project1.png') }}" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Aug. 2024- Product implementation to Blockhouse (seed startup backed by Soma Capital). I built the program to scrape
+                SEC 13F filings and generate customized reports for prospecting customers.</p>
+            <p>It is integrated into the sales infrastructure, including Smartleads and Airtable software.
+                I built it initially on a Flask backend with a simple HTML and CSS frontend.
+                I then worked with the developers to help move it over to their Django Stack. You can view both the original and
+                implemented versions below.</p>
+            <p>Be sure to click on one of the firms in the list to view the report 📝</p>
+            <a href="https://example.com/project1" class="live-link">Original</a>
+            <a href="https://blockhouse.app/report" class="live-link">Live Version</a>
+        </div>
+    </section>
+    <section id="personal-projects">
+        <h2>Personal Projects</h2>
+        <div class="project">
+            <!-- Adjusted the image source -->
+            <img src="{{ url_for('static', filename='images/project2.jpg') }}" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>May 2024-Objection detection. Project for fun to learn hugging face API and
+            coding AI in the backend.</p>
+        </div>
+        <div class="project">
+            <!-- Adjusted the image source -->
+            <img src="{{ url_for('main.static', filename='images/project3.jpg') }}" alt="Project 3">
+            <h3>Project 3</h3>
+            <p>May 2024- Translator. Project for fun to learn hugging face API and
+            coding AI in the backend. </p>
+        </div>
+    </section>
+</body>
+</html>
