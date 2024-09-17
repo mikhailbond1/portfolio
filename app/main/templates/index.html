@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mikhail's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Adjusted the CSS link -->
     <link rel="stylesheet" href="{{ url_for('main.static', filename='css/style.css') }}">
 
 </head>
 <body>
     <header>
         <div class="about-section">
-            <!-- Adjusted the image source -->
             <img src="{{ url_for('main.static', filename='images/mikhail.png') }}" alt="Mikhail">
             <h1>About Mikhail</h1>
             <p>Junior @ NYU pursuing a CS major 🧑🏻‍💻. Interested in startups and entrepreneurship.</p>
@@ -24,7 +22,6 @@
     <section id="work-projects">
         <h2>Work Projects</h2>
         <div class="project">
-            <!-- Adjusted the image source -->
             <img src="{{ url_for('main.static', filename='images/project1.png') }}" alt="Project 1">
             <h3>Project 1</h3>
             <p>Aug. 2024- Product implementation to Blockhouse (seed startup backed by Soma Capital). I built the program to
@@ -34,38 +31,34 @@
                 I then worked with the developers to help move it over to their Django Stack. You can view the
                 implemented version below.</p>
             <p>Be sure to click on one of the firms in the list to view the report 📝</p>
-            <a href="https://example.com/project1" class="live-link">Original</a>
             <a href="https://blockhouse.app/report" class="live-link">Live Version</a>
         </div>
         <div class="project">
             <!-- Adjusted the image source -->
-            <img src="{{ url_for('main.static', filename='images/project1.png') }}" alt="Project 1">
+            <img src="{{ url_for('main.static', filename='images/project2.png') }}" alt="Project 2">
             <h3>Project 2</h3>
             <p>Jul. 2024- Product implementation to Blockhouse (seed startup backed by Soma Capital). I built the program to
                 scrape data from 13 F filings and run quantitative AI models on it to get estimations for savings.</p>
             <p>Check out the code using the Github link 🔗 and my Loom walk through of the program as well. 🎥 </p>
-            <a href="https://github.com/mikhailbond1/FirmAnalysis" class="Github Link">Code</a>
+            <a href="https://github.com/mikhailbond1/FirmAnalysis" class="live-link">Code</a>
             <a href="https://juvenile-output-bb7.notion.site/Report-Generation-1-10393650e18e81b2a28cda7669f1169d?pvs=4" class="live-link">Video Series</a>
         </div>
     </section>
     <section id="personal-projects">
         <h2>Personal Projects</h2>
         <div class="project">
-            <!-- Adjusted the image source -->
-            <img src="{{ url_for('static', filename='images/project2.jpg') }}" alt="Project 2">
-            <h3>Project 2</h3>
-            <p>May 2024-Objection detection. Project for fun to learn hugging face API and
-            coding AI in the backend. Check out the code below- I don't have a live version as the RAM requirments
-            are too high.</p>
-            <a href="https://github.com/mikhailbond1/FirmAnalysis" class="Github Link">Code</a>
-        </div>
-        <div class="project">
-            <!-- Adjusted the image source -->
-            <img src="{{ url_for('main.static', filename='images/project3.jpg') }}" alt="Project 3">
+            <img src="{{ url_for('main.static', filename='images/project3.png') }}" alt="Project 3">
             <h3>Project 3</h3>
-            <p>May 2024- Translator. Project for fun to learn hugging face API and
-            coding AI in the backend. </p>
+            <p>May 2024-Objection detection 🔎. Inputs an image and sends it to a Huggingface AI
+                model to return what is in the image. Project for fun to learn hugging face API and
+                coding AI in the backend. Check out the code here and loom video below. </p>
+            <a href="https://github.com/mikhailbond1/object_detection" class="live-link">Code</a>
+            <a href="https://www.loom.com/share/a08e0ac119fd41c0bdd0d5b4a8c3adff?sid=f4323915-bdc1-41a5-9010-c2051f68dddf" class="live-link">Loom Video</a>
+
         </div>
     </section>
+    <footer>
+        <p>Reach out to me at <a href="mailto:mikhail.bond@nyu.edu">mikhail.bond@nyu.edu</a></p>
+    </footer>
 </body>
 </html>

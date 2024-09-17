@@ -77,3 +77,20 @@ h2 {
 .live-link:hover {
     background-color: #005fa3;
 }
+
+footer {
+    background-color: #f8f9fa; /* light grey background for the footer */
+    color: #212529; /* dark text for readability */
+    text-align: center; /* centers the footer text */
+    padding: 1rem 0; /* top and bottom padding */
+    border-top: 1px solid #e9ecef; /* subtle top border for a clear division */
+}
+
+footer a {
+    color: #007bff; /* bright blue for links to stand out */
+    text-decoration: none; /* no underline on the links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* underline on hover for better user interaction */
+}

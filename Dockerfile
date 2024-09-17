@@ -26,4 +26,4 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 ENV FLASK_APP=app/__init__.py
 
 # Set the default command to run the Flask app
-CMD ["flask", "run", "--host=0.0.0.0", "--port=5002"]
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
